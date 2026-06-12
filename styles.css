@@ -1,0 +1,514 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.links{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.context{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.context:hover{
+    color: red;
+    border-bottom: solid 1px red;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: red;
+}
+
+.menu-btn, .close-btn{
+    display: none;
+}
+
+.content{
+    color: white;
+    margin: 10px;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.home-1 img{
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 30px red;
+    border-radius: 10px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+
+i{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+i:hover{
+    color: red;
+    box-shadow: 0 0 10px red;
+    border: none;
+    outline: none;
+}
+
+.text{
+    color: red;
+}
+
+.text-2::after{
+    content: "Front-End Developer";
+    color: red;
+    margin: 10px;
+    animation: typingText 10s linear infinite;
+}
+
+@keyframes typingText {
+    0%, 25%{
+        content: "Front-End Developer";
+    }
+
+    26%, 50%{
+        content: "Lead Generation";
+    }
+
+    51%, 75%{
+        content: "Graphic Designer";
+    }
+
+    76%, 100%{
+        content: "Video Editing";
+    }
+}
+
+.btn{
+     background: none;
+     background-color: red;
+     width: 200px;
+     height: 50px;
+     outline: none;
+     border: solid 1px red;
+     border-radius: 10px;
+     box-shadow: 0 0 10px red;
+     cursor: pointer;
+     color: white;
+     margin: 10px;
+     transition: 0.5s;
+}
+
+.btn:hover{
+    background: none;
+    box-shadow: none;
+    color: red;
+}
+
+.project-logo{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: red;
+    gap: 1rem;
+    margin: 10px;
+    border-bottom: solid 1px red;
+}
+
+.items{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: solid 1px red;
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.prj{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.project-links{
+    text-decoration: none;
+}
+
+.items:hover{
+    color: red;
+    transform: scale(1rem);
+}
+
+.about-logo{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: red;
+    border-bottom: solid 1px red;
+}
+
+.about img{
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 30px red;
+    border-radius: 10px;
+}
+
+.about-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    gap: 1.7rem;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.contact-me{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+    padding: 20px;
+}
+
+.input-message{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid 1px red;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.contact-text{
+    margin: 20px;
+    padding: 20px   ;
+    color: white;
+    border: solid 1px red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.btn-3{
+    color: white;
+    background: none;
+    border: solid 1px red;
+    background-color: red;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px red;
+    transition: 0.5s linear;
+}
+
+.btn-3:hover{
+    background: none;
+    color: red;
+    box-shadow: none;
+}
+
+.name, .gmail, .message{
+    color: white;
+    margin: 10px;
+    background: none;
+}
+
+.name, .gmail{
+    padding: 10px;
+    outline: none;
+    border: solid 1px red;
+    border-radius: 10px;
+}
+
+.gmail:hover{
+    border: solid 1px aliceblue;
+}
+
+.name:hover{
+    border: solid 1px aliceblue;
+}
+
+.message:hover{
+    border: solid 1px aliceblue;
+}
+
+.message{
+    height: 100px;
+    width: 200px;
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+    border: solid 1px red;
+    padding: 10px;
+}
+
+.message::placeholder{
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.btn-2{
+    color: white;
+    outline: none;
+    background: none;
+    background-color: red;
+    border: solid 1px red;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px red;
+    transition: 0.5s ease;
+}
+
+.btn-2:hover{
+    background: none;
+    box-shadow: none;
+    color: red;
+}
+
+/* responsive rules*/
+
+@media (min-width: 601px) {
+    body{
+        overflow-x: hidden;
+    }
+}
+
+@media(max-width: 600px) {
+
+       html, body{
+        overflow-x: hidden;
+        width: 100%;
+       }
+      .nav-links{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: rgb(44, 38, 38);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        transition: 0.5s;
+      }
+
+      .nav-links.active{
+        right: 0;
+      }
+
+      .menu-btn{
+        display: block;
+        cursor: pointer;
+        background: none;
+      }
+
+      .close-btn{
+        cursor: pointer;
+        display: block;
+      }
+
+      .logo{
+        font-size: 1rem;
+        background: none;
+      }
+
+      .home-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+      }
+
+      .navbar{
+        z-index: 999;
+        background: none;
+      }
+
+      .home-1 img{
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+      }
+
+      .home-1{
+        font-size: 15px;
+      }
+
+      .home{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin-top: 50px;
+      }
+
+      .about-logo{
+        font-size: 1.5rem;
+      }
+
+      .project-logo{
+        font-size: 1.5rem;
+      }
+
+      .prj{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .items{
+        padding: 10px;
+        font-size: 12px;
+      }
+
+      .about{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+      }
+
+      .about img{
+        width: 230px;
+        height: 230px;
+        object-fit: cover;
+      }
+
+      .about-me{
+        gap: 1.5rem;
+      }
+
+      .contact-me{
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .contact{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin-top: 40px;
+      }
+       
+      .contact-text{
+        font-size: 16px;
+        padding: 12px;
+      }
+
+      .input-message{
+        width: 100%;
+        padding: 10px;
+      }
+
+      .message, .name, .gmail{
+        padding: 5px;
+        background: none;
+      }
+
+      .contact-logo{
+        font-size: 1.5rem;
+      }
+}
